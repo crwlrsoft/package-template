@@ -25,12 +25,12 @@
         }
     },
     "require": {
-        "php": "^8.0"
+        "php": "^8.1"
     },
     "require-dev": {
-        "pestphp/pest": "^1.22",
-        "phpstan/phpstan": "^1.8",
-        "friendsofphp/php-cs-fixer": "^3.11"
+        "pestphp/pest": "^2.19",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.30"
     },
     "scripts": {
         "test": "@php vendor/bin/pest",

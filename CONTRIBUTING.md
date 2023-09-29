@@ -29,7 +29,7 @@ guarantee that your feature will be merged.
 ### Coding Style
 
 This package follows the
-[PSR-12](https://www.php-fig.org/psr/psr-12/) coding standard.
+[PER Coding Style](https://www.php-fig.org/per/coding-style/).
 You can run PHP CS Fixer via `composer cs` for a dry run or
 `composer cs-fix` to automatically fix code style issues.
 
