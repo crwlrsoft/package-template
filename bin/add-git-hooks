@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-$src = __DIR__ . '/../git-hooks/pre-commit';
+$src = __DIR__ . '/git-hooks/pre-commit';
 $dest = __DIR__ . '/../.git/hooks/pre-commit';
 
 copy($src, $dest);
