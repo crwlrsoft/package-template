@@ -19,6 +19,12 @@
         "source": "https://github.com/crwlrsoft/...",
         "docs": "https://www.crwlr.software/packages/..."
     },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/otsch"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Crwlr\\PackageTemplate\\": "src/"
@@ -28,15 +34,15 @@
         "php": "^8.1"
     },
     "require-dev": {
-        "pestphp/pest": "^2.19",
+        "pestphp/pest": "^2.19|^3.0",
         "phpstan/phpstan": "^1.10",
-        "friendsofphp/php-cs-fixer": "^3.30"
+        "friendsofphp/php-cs-fixer": "^3.57"
     },
     "scripts": {
-        "test": "@php vendor/bin/pest",
+        "test": "@php vendor/bin/pest --display-warnings --bail",
         "cs": "@php vendor/bin/php-cs-fixer fix -v --dry-run",
         "cs-fix": "@php vendor/bin/php-cs-fixer fix -v",
-        "stan": "@php vendor/bin/phpstan analyse -c phpstan.neon",
+        "stan": "@php -d memory_limit=4G vendor/bin/phpstan analyse -c phpstan.neon",
         "add-git-hooks": "@php bin/add-git-hooks"
     },
     "config": {
